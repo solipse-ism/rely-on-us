@@ -2305,7 +2305,7 @@ html {
   height: 100vh;
   font-size: 62.5%;
   background: radial-gradient(83.31% 151.8% at 105.8% 4.1%, rgba(255, 133, 20, 0.32) 0%, rgba(255, 133, 20, 0.00) 100%), radial-gradient(88.5% 101.99% at 35.9% -14.4%, rgba(38, 92, 253, 0.40) 0%, rgba(38, 92, 253, 0.00) 100%), #161618;
-  padding: 1.6em 10.4em 0 10.4em;
+  padding: 2.4em 10.4em 0 10.4em;
 }
 
 heading-nav a button{
