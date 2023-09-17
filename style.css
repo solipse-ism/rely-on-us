@@ -30,6 +30,7 @@
   font-family: Aileron, Inter, "Space Mono", sans-serif;
 }
 body {
+  font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background: var(--dark-bg);
