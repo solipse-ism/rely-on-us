@@ -164,5 +164,5 @@ header nav li:hover{
 }
 footer{
   font-size: var(--font-1);
-  color: #293156;
+  color: hsl(229, 35%, 90%);
 }
