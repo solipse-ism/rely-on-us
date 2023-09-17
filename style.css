@@ -72,13 +72,13 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 /* Setup all font */
-@font-face {font-family: "Aileron";src: url(/branding/font/Aileron-Light.woff);font-weight: 300;font-style: normal;}
-@font-face {font-family: "Aileron";src: url(/branding/font/Aileron-Light-Italic.woff);font-weight: 300;font-style: italic;}
-@font-face {font-family: "Aileron";src: url(/branding/font/Aileron-Regular.woff);font-weight: normal;font-style: normal;}
-@font-face {font-family: "Aileron";src: url(/branding/font/Aileron-Bold.woff);font-weight: bold;font-style: normal;}
-@font-face {font-family: "Aileron";src: url(/branding/font/Aileron-Bold-Italic.woff);font-weight: bold;font-style: italic;}
-@font-face {font-family: "Aileron";src: url(/branding/font/Aileron-Black.woff);font-weight: 900;font-style: normal;}
-@font-face {font-family: "Aileron";src: url(/branding/font/Aileron-Black-Italic.woff);font-weight: bold;font-style: italic;}
+@font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Light.woff);font-weight: 300;font-style: normal;}
+@font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Light-Italic.woff);font-weight: 300;font-style: italic;}
+@font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Regular.woff);font-weight: normal;font-style: normal;}
+@font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Bold.woff);font-weight: bold;font-style: normal;}
+@font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Bold-Italic.woff);font-weight: bold;font-style: italic;}
+@font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Black.woff);font-weight: 900;font-style: normal;}
+@font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Black-Italic.woff);font-weight: bold;font-style: italic;}
 /* Utility Class */
 .flex-row{display:flex;}
 .flex-col{display:flex; flex-direction: column;}
@@ -161,4 +161,8 @@ header nav li:hover{
 .relyonus-description span{
   font-weight: var(--bold);
 
+}
+footer{
+  font-size: var(--font-1);
+  color: #293156;
 }
