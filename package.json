@@ -1,0 +1,21 @@
+{
+  "name": "rely-on-us",
+  "description": "Geography Resource : https://solipse-ism.github.io/rely-on-us/subject/Geography.html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solipse-ism/rely-on-us.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solipse-ism/rely-on-us/issues"
+  },
+  "homepage": "https://github.com/solipse-ism/rely-on-us#readme"
+}
