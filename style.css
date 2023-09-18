@@ -105,6 +105,7 @@
   .gap-300{gap: 3rem;}
   .gap-400{gap: 4rem;}
   .mt-100{margin-top: 1rem;}
+  .mt-150{margin-top: 1.5rem;}
   .mt-200{margin-top: 2rem;}
   .mt-300{margin-top: 3rem;}
   .mt-400{margin-top: 4rem;}
@@ -117,6 +118,7 @@
   .mt-1100{margin-top: 11rem;}
   .mt-1150{margin-top: 11.5rem;}
   .mt-1200{margin-top: 12rem;}
+  .mt-1250{margin-top: 12.5rem;}
   .w-100{width: 100%;}
   .text-center{text-align: center;}
   .relative{position: relative;}
@@ -218,4 +220,3 @@
     font-weight: 700;
   }
 /* Resource */
-  
