@@ -1,1 +1,7 @@
-import{filterBtn,optionBtn}from"../component.js";document.addEventListener("DOMContentLoaded",()=>{optionBtn(a=>{})});
+import { filterBtn, optionBtn } from "../component.js";
+
+let currentCourse;
+let currentOption;
+optionBtn(updatedOption => {
+  currentOption = updatedOption;
+});

@@ -1,11 +1,11 @@
 {
   "name": "rely-on-us",
-  "description": "Geography Resource : https://solipse-ism.github.io/rely-on-us/subject/Geography.html",
+  "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "esbuild /src/js/**/*.js --bundle --minify --watch --outdir=/dist",
+    "build": "node esbuild.config.mjs"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/solipse-ism/rely-on-us/issues"
   },
-  "homepage": "https://github.com/solipse-ism/rely-on-us#readme"
+  "homepage": "https://github.com/solipse-ism/rely-on-us#readme",
+  "devDependencies": {
+    "esbuild": "0.19.3"
+  }
 }
