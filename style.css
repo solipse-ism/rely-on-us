@@ -19,10 +19,15 @@
   /* Typography */
   --ff-base: "Aileron", "Inter", sans-serif;
   --ff-accent: "Space Mono";
+  --fs-small: clamp(0.8rem, 0.98rem + 0.11vw, 1.25rem);
+  --fs-large: clamp(1.25rem, 1.34rem + 0.48vw, 1.70rem);
 }
 /* CSS RESET FOR RELY ON US*/
   *, *::before, *::after {
     box-sizing: border-box;
+  }
+  *:focus{
+    outline: none;
   }
   * {
     margin: 0;
@@ -30,7 +35,7 @@
   }
   body {
     font-family: var(--ff-base);
-    font-size: 16px;
+    font-size: var(--fs-small);
     color: hsla(var(--clr-text), 1);
     line-height: 1.5;
     background: hsla(var(--clr-background), 1);
@@ -82,12 +87,18 @@
   @font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Black-Italic.woff);font-weight: bold;font-style: italic;}
 /* Utility Class */
   .flex-row{display:flex;}
+  .flex{display: flex; flex-wrap: wrap;}
+  .between-center{justify-content: space-between; align-items: center;}
+  .center-center{justify-content: center; align-items: center;}
   .flex-col{display:flex; flex-direction: column;}
   .grid{display:grid;}
+  .grid-row{display:grid; grid-auto-flow: row;}
+  .grid-column{display:grid; grid-auto-flow: column;}
   .place-center{align-items:center; justify-content: center;}
   .items-center{align-items: center;}
   .justify-center{justify-content: center;}
   .justify-between{justify-content: space-between;}
+  .items-end{align-items: end;}
   .upper{text-transform: uppercase;}
   .capital{text-transform: capitalize;}
   .gap-25{gap: .25rem;}
@@ -113,10 +124,24 @@
   .mt-1150{margin-top: 11.5rem;}
   .mt-1200{margin-top: 12rem;}
   .mt-1250{margin-top: 12.5rem;}
-  .w-100{width: 100%;}
+  .w100{width: 100%;}
   .text-center{text-align: center;}
   .relative{position: relative;}
-/* General */
+/* General OUTLINE ALL */
+* {
+  /* outline: 2px solid red; */
+}
+.container{
+  max-width: 3000px;
+  width: 90%;
+  align-self: center;
+  margin-inline: auto;
+}
+@media (min-width:2000px){
+  .container{
+    width: 80%;
+  }
+}
   h1{
     font-size: 7rem;
     line-height: 1.1; 
@@ -149,8 +174,10 @@
     transition: background 0.2s;
     cursor: pointer;
   }
-  .btn--option:hover{
+  .btn--option:hover,
+  .btn--option:focus{
     background: hsla(220, 50%, 75%, .1);
+    outline: none;
   }
   .btn--option-active{
     margin-inline: .25rem;
@@ -166,14 +193,44 @@
     transition: all .2s;
     cursor:pointer;
   }
-  .btn--accent:hover{
+  .btn--accent:hover, .btn--accent:focus{
+    outline: none;
     background: hsla(var(--clr-accent), 1);
   }
+  .btn--filter{
+    cursor: pointer;
+    position: relative
+  }
+  .btn--filter::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    border-radius: 1rem;
+    background: white;
+
+    transform:scaleX(0);
+    transition: transform 250ms;
+  }
+  .btn--filter:hover::before,
+  .btn--filter:focus::before{
+    transform:scaleX(1);
+  }
+  .btn--filter-active::before{
+    transform:scaleX(1);
+    opacity: .4;
+  }
+  .btn--filter-active:hover::before,
+  .btn--filter-active:focus::before{
+    transform:scaleX(1);
+    opacity: 1;
+  }
+
   header{
     position: fixed;
     top: 1.5rem;
-    left: 6rem;
-    right: 6rem;
   }
   footer{
     color: hsl(229, 35%, 90%);
@@ -215,36 +272,24 @@
   }
 /* Resource */
 .resource{
-  position: relative;
-  padding-inline: 6rem;
 }
 .resource__hero{
-  position: ;
-  top: 0;
-  z-index: -2;
-  outline: none;
+  position: absolute;
+  top: -15px;
+  z-index: -1;
 }
 .resource h1{
   letter-spacing: -0.08rem;
   font-size: 4rem;
 }
-.resource__filter-1{
-  align-items: end;
-}
-.resource__search-wrapper{
-  padding: 0.625rem 1.1875rem;
-  border-radius: 0.5rem;
-  outline: 1px solid hsl(var(--clr-text));
-}
 .resource__subject-search{
   background: transparent;
   color: var(--clr-text);
   border: none;
-  margin-right: 1rem;
-  outline: none;
-}
-.resource__subject-search::placeholder{
-  color: var(--clr-text);
+  padding: 0.625rem 1.1875rem;
+  border-radius: 0.5rem;
+  outline: 1px solid hsl(var(--clr-text));
+
 }
 .rule{
   background: white;
@@ -288,8 +333,4 @@
 }
 .resource__subject--syllabus{
   grid-area: syllabus;
-}
-
-* {
-  /* outline: 1px solid white; */
 }
