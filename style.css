@@ -86,6 +86,7 @@
   @font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Black.woff);font-weight: 900;font-style: normal;}
   @font-face {font-family: "Aileron";src: url(/brand/font/Aileron-Black-Italic.woff);font-weight: bold;font-style: italic;}
 /* Utility Class */
+  .invisible{display: none;}
   .flex-row{display:flex;}
   .flex{display: flex; flex-wrap: wrap;}
   .between-center{justify-content: space-between; align-items: center;}
@@ -233,7 +234,7 @@
   }
 
   header{
-    position: fixed;
+    position: absolute;
     top: 1.5rem;
   }
   footer{
@@ -304,26 +305,32 @@
   height: 2px;
   border-radius: 1rem;
 }
+/* grid for main resource block*/
 .resource__subjects{
   grid-template-columns: 12rem 1fr;
   min-height: fit-content;
   justify-content: start;
   align-items: center;
+  outline: 1px solid red;
 }
 .resource__subjects__filter{
   gap: 1rem;
   align-self: start;
-  justify-items: left;
+  outline: inherit;
 }
 .resource__subjects__filter > *{
-  display: inline-flex;
   text-align: left;
   align-items: center;
-  width: fit-content;
+  width: 80%;
+  height: max-content;
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
   position: relative;
+  /* background: hsla(227, 100%, 59%, 0.2); */
+}
+.visible{
+  display:flex;
 }
 .resource__subjects__filter span{
   transition: transform 200ms ease-out;
@@ -334,7 +341,7 @@
   font-weight: 600;
 }
 .resource__subjects__filter > *::before{
-  content:'';
+  content: '';
   position: absolute;
   inset-block: 0;
   width: 0.1rem;
@@ -364,8 +371,8 @@
   height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 1rem;  
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+  /* overflow-x: scroll;
+  scroll-snap-type: x mandatory; */
 }
 .resource__subjects--main > *{
   background-color: hsla(var(--clr-text), 0.1);

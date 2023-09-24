@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 	<title>Rely on Us | Resource</title>
 	<script type="module" src="/main.js"></script>
-	<script type="module" src="/src/js/component.js"></script>
+	<script type="module" src="/src/js/page/resource.js"></script>
 	
 </head>
 <body class="flex-col">
@@ -77,11 +77,11 @@
 			<h1 class="upper mt-950">resource</h1>
 			<div class="resource__filter--course items-end flex-row justify-between mt-300 w-100">
 				<ul class="flex-row justify-between gap-150">
-					<li tabindex="0" class="btn--filter upper">KS3</li>
-					<li tabindex="0" class="btn--filter upper btn--filter-active">IGCSE</li>
-					<li tabindex="0" class="btn--filter upper">IAS / IAL</li>
-					<li tabindex="0" class="btn--filter upper">SAT</li>
-					<li tabindex="0" class="btn--filter upper">IELTS</li>
+					<li tabindex="0" class="btn--filter upper" id="ks3">KS3</li>
+					<li tabindex="0" class="btn--filter upper" id="igcse">IGCSE</li>
+					<li tabindex="0" class="btn--filter upper" id="ias-ial">IAS / IAL</li>
+					<li tabindex="0" class="btn--filter upper" id="sat">SAT</li>
+					<li tabindex="0" class="btn--filter upper" id="ielts">IELTS</li>
 				</ul>
 				<input class="resource__search" type="text" placeholder="Subject Search">
 			</div>
@@ -90,14 +90,14 @@
 
 			<div class="resource__subjects grid w-100 mt-100">
 				<div class="resource__subjects__filter grid">
-					<li tabindex="0" class="resource__subjects__filter--active"><span>all</span></li>
-					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">stem</span></li>
-					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">art &amp; design</span></li>
-					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">humanity</span></li>
-					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">language</span></li>
-					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">pe</span></li>
-					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">HPQ</span></li>
-					<li tabindex="0" class="ias-ial"><span class="resource__subjects__filter">EPQ</span></li>
+					<li tabindex="0" class="invisible ks3 igcse ias-ial sat ielts resource__subjects__filter--active"><span>all</span></li>
+					<li tabindex="0" class="igcse invisible"><span>stem</span></li>
+					<li tabindex="0" class="igcse invisible"><span>art &amp; design</span></li>
+					<li tabindex="0" class="igcse invisible"><span>humanity</span></li>
+					<li tabindex="0" class="igcse invisible"><span>language</span></li>
+					<li tabindex="0" class="igcse invisible"><span>pe</span></li>
+					<li tabindex="0" class="igcse invisible"><span>HPQ</span></li>
+					<li tabindex="0" class="ias-ial invisible"><span>EPQ</span></li>
 				</div>	
 
 				

@@ -1,0 +1,1 @@
+import{filterBtn,optionBtn}from"../component.js";document.addEventListener("DOMContentLoaded",()=>{optionBtn(a=>{})});

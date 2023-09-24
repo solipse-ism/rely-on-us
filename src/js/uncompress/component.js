@@ -40,16 +40,6 @@ export function optionBtn(callback, className){
         const currentOption = document.querySelector(".btn--filter-active");
         callback(currentOption); // Pass the updated value to the callback
       }
-      btn.addEventListener("keyup", (e) => {
-        if(e.keyCode === 13 || e.keyCode === 32){
-          if(btn.classList.contains("resource__subjects__filter--active"))return;
-          const activeBtn = document.querySelector(".resource__subjects__filter--active")
-          console.log(activeBtn);
-          swapClass(activeBtn, btn, "resource__subjects__filter-");
-          const currentOption = document.querySelector(".btn--filter-active");
-          callback(currentOption); // Pass the updated value to the callback
-        }
-      })
     })
   });
 }
