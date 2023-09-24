@@ -1,5 +1,5 @@
-import component from "/src/js/component.js";
+import {filterBtn} from "/src/js/component.js";
 
 document.addEventListener("DOMContentLoaded", () =>{
-  component();
+  filterBtn();
 })

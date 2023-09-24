@@ -5,7 +5,7 @@ function findActiveClass(components, cssName){
   return componentArray.find(component => component.classList.contains(`${cssName}-active`));
 }
 
-export default function component(){
+export function filterBtn(){
   const filterBtn = document.querySelectorAll(".btn--filter");
   const filterBtnName = "btn--filter"
   filterBtn.forEach(btn => {
@@ -16,7 +16,7 @@ export default function component(){
       swapClass(activeBtn, btn, filterBtnName);
     }
     btn.addEventListener("keyup", (e) => {
-      if(e.keyCode === 13){
+      if(e.keyCode === 13 || e.keyCode === 32){
         if(!!btn.classList[2])return;
         const activeBtn = findActiveClass(filterBtn, filterBtnName);
         console.log(activeBtn);

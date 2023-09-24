@@ -36,6 +36,27 @@
 		</nav>
 	</header>
 	<main class="container">
+		<svg  class="resource__hero--2 full-container" viewBox="0 0 1440 1250" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g filter="url(#filter0_f_469_207)">
+			<path d="M1671.93 583.265C1725.54 921.726 1342.95 1010.51 828.012 1092.07C313.074 1173.63 -139.22 1217.07 -192.827 878.613C-246.434 540.152 127.549 199.658 642.487 118.1C1157.42 36.542 1618.32 244.803 1671.93 583.265Z" fill="url(#paint0_radial_469_207)" fill-opacity="0.06"/>
+			<path d="M1671.93 583.265C1725.54 921.726 1342.95 1010.51 828.012 1092.07C313.074 1173.63 -139.22 1217.07 -192.827 878.613C-246.434 540.152 127.549 199.658 642.487 118.1C1157.42 36.542 1618.32 244.803 1671.93 583.265Z" fill="url(#paint1_radial_469_207)" fill-opacity="0.06"/>
+			</g>
+			<defs>
+			<filter id="filter0_f_469_207" x="-297.94" y="0.414062" width="2074.88" height="1249.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_469_207"/>
+			</filter>
+			<radialGradient id="paint0_radial_469_207" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(858.735 835.522) rotate(48.3825) scale(977.041 1241.17)">
+			<stop offset="0.18542" stop-color="#5579F6"/>
+			<stop offset="1" stop-color="#5579F6" stop-opacity="0"/>
+			</radialGradient>
+			<radialGradient id="paint1_radial_469_207" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-47.1362 289.849) rotate(80.0682) scale(1491.84 1825.04)">
+			<stop stop-color="#FF8514"/>
+			<stop offset="1" stop-color="#FF8514" stop-opacity="0"/>
+			</radialGradient>
+			</defs>
+		</svg>
 		<section class="resource text-center">
 			<svg class="resource__hero container" height="501" viewBox="0 0 1440 501" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g filter="url(#filter0_f_469_202)">
@@ -54,33 +75,57 @@
 				</defs>
 			</svg>
 			<h1 class="upper mt-950">resource</h1>
-			<section class="items-end flex-row justify-between mt-300 w-100">
+			<div class="resource__filter--course items-end flex-row justify-between mt-300 w-100">
 				<ul class="flex-row justify-between gap-150">
-					<li tabindex="0" class="btn--filter upper btn--filter-active">KS3</li>
-					<li tabindex="0" class="btn--filter upper">IGCSE</li>
+					<li tabindex="0" class="btn--filter upper">KS3</li>
+					<li tabindex="0" class="btn--filter upper btn--filter-active">IGCSE</li>
 					<li tabindex="0" class="btn--filter upper">IAS / IAL</li>
 					<li tabindex="0" class="btn--filter upper">SAT</li>
 					<li tabindex="0" class="btn--filter upper">IELTS</li>
 				</ul>
-				<input class="resource__subject-search" type="text" placeholder="Subject Search">
-			</section>
-			<div class="mt-100 w-100 rule"></div>
-			<section class="resource__subjects grid w-100 mt-100">
-				<div class="resource__filter grid">
-					FILTER
+				<input class="resource__search" type="text" placeholder="Subject Search">
+			</div>
+
+			<div class="rule mt-100 w-100"></div>
+
+			<div class="resource__subjects grid w-100 mt-100">
+				<div class="resource__subjects__filter grid">
+					<li tabindex="0" class="resource__subjects__filter--active"><span>all</span></li>
+					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">stem</span></li>
+					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">art &amp; design</span></li>
+					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">humanity</span></li>
+					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">language</span></li>
+					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">pe</span></li>
+					<li tabindex="0" class="igcse"><span class="resource__subjects__filter">HPQ</span></li>
+					<li tabindex="0" class="ias-ial"><span class="resource__subjects__filter">EPQ</span></li>
+				</div>	
+
+				
+				<div class="resource__subjects--main grid">
+					<li tabindex="0">1</li>
+					<li tabindex="0">2</li>
+					<li tabindex="0">3</li>
+					<li tabindex="0">1</li>
+					<li tabindex="0">2</li>
+					<li tabindex="0">3</li>
+					<li tabindex="0">1</li>
+					<li tabindex="0">2</li>
+					<li tabindex="0">3</li>
+					<li tabindex="0">1</li>
+					<li tabindex="0">2</li>
+					<li tabindex="0">3</li>
+					<li tabindex="0">1</li>
+					<li tabindex="0">2</li>
+					<li tabindex="0">3</li>
+					<li tabindex="0">1</li>
+					<li tabindex="0">2</li>
+					<li tabindex="0">3</li>
 				</div>
-				<div class="resource__subject grid">
-					<li>
-						<img src="https://source.unsplash.com/3tYZjGSBwbk" alt="Biology">
-						<h6 class="resouce__subject--title">Biology</h6>
-						<p class="resource__subject--syllabus">0610</p>
-					</li>
-					<li>SUBJECT 1</li>
-					<li>SUBJECT 1</li>
-				</div>
-			</section>
-			<footer class="captial mt-800">This Website is currently under development</footer>
+			</div>
+
 		</section>
+
+		<footer class="captial mt-800">This Website is currently under development</footer>
 	</main>
 </body>
 </html>
