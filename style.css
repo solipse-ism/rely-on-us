@@ -26,7 +26,7 @@
   *, *::before, *::after {
     box-sizing: border-box;
   }
-  *:focus{
+  *:focus-visible{
     outline: none;
   }
   * {
@@ -46,7 +46,7 @@
     text-decoration: none;
     color: hsla(var(--clr-text), 1);
   }
-  html:focus-within {
+  html:focus-visible-within {
     scroll-behavior: smooth;
   }
   ul[role='list'],
@@ -181,7 +181,7 @@
     cursor: pointer;
   }
   .btn--option:hover,
-  .btn--option:focus{
+  .btn--option:focus-visible{
     background: hsla(220, 50%, 75%, .1);
     outline: none;
   }
@@ -199,13 +199,13 @@
     transition: all .2s;
     cursor:pointer;
   }
-  .btn--accent:hover, .btn--accent:focus{
+  .btn--accent:hover, .btn--accent:focus-visible{
     outline: none;
     background: hsla(var(--clr-accent), 1);
   }
   .btn--filter{
     cursor: pointer;
-    position: relative
+    position: relative;
   }
   .btn--filter::before{
     content: "";
@@ -221,15 +221,18 @@
     transition: transform 250ms;
   }
   .btn--filter:hover::before,
-  .btn--filter:focus::before{
+  .btn--filter:focus-visible::before{
     transform:scaleX(1);
   }
   .btn--filter-active::before{
     transform:scaleX(1);
     opacity: .4;
   }
+  .btn--filter-active{
+    font-weight: 600;
+  }
   .btn--filter-active:hover::before,
-  .btn--filter-active:focus::before{
+  .btn--filter-active:focus-visible::before{
     opacity: .7;
   }
 
@@ -336,7 +339,7 @@
   transition: transform 200ms ease-out;
 }
 .resource__subjects__filter *:hover > span,
-.resource__subjects__filter *:focus > span{
+.resource__subjects__filter *:focus-visible > span{
   transform: translateX(1.5rem);
   font-weight: 600;
 }
@@ -351,7 +354,7 @@
   transition: transform 150ms;
 }
 .resource__subjects__filter > *:hover::before,
-.resource__subjects__filter > *:focus::before{
+.resource__subjects__filter > *:focus-visible::before{
   transform: scaleY(0.7);
 }
 .resource__subjects__filter--active > span{

@@ -28,14 +28,20 @@ export function optionBtn(callback, className){
     className = updatedCourse.id;
     resetInvisible();
     const optionBtn = document.querySelectorAll(`.${className}`)
-    console.log(optionBtn);
+    if (!optionBtn) {resetInvisible(); return;}
+    const defaultActiveBtn = document.querySelector(".resource__subjects__filter--default");
+    if (!defaultActiveBtn.classList.contains("resource__subjects__filter--active")){
+      const activeBtn = document.querySelector(".resource__subjects__filter--active");
+      activeBtn.classList.remove("resource__subjects__filter--active");
+      defaultActiveBtn.classList.add("resource__subjects__filter--active");
+    
+    }
     optionBtn.forEach(btn => {
       btn.classList.remove("invisible");
       btn.classList.add("visible");
       btn.onclick = () => {
         if(btn.classList.contains("resource__subjects__filter--active"))return;
-        const activeBtn = document.querySelector(".resource__subjects__filter--active")
-        console.log(activeBtn);
+        const activeBtn = document.querySelector(".resource__subjects__filter--active");
         swapClass(activeBtn, btn, "resource__subjects__filter-");
         const currentOption = document.querySelector(".btn--filter-active");
         callback(currentOption); // Pass the updated value to the callback
@@ -58,7 +64,12 @@ export function filterBtn(callback){
   const filterBtnName = "btn--filter"
   filterBtn.forEach(btn => {
     btn.onclick = () => {
-      if(!!btn.classList[2])return;
+      if(!!btn.classList[2]){
+        const currentCourse = document.querySelector(".btn--filter-active");
+        currentCourse.classList.remove("btn--filter-active");
+        callback(currentCourse + "."); // Pass the updated value to the callback
+        return;
+      };
       const activeBtn = findActiveClass(filterBtn, filterBtnName);
       swapClass(activeBtn, btn, filterBtnName);
       const currentCourse = document.querySelector(".btn--filter-active");
