@@ -379,6 +379,7 @@
 }
 .resource__subjects--main > *{
   background-color: hsla(var(--clr-text), 0.1);
+  display: flex;
   outline: 1px solid white;
   padding: 1rem 2rem;
   text-transform: uppercase;
