@@ -9,6 +9,10 @@ function makeInvisible(cssName){
   cssName.classList.remove("visible");
   cssName.classList.add("invisible");
 }
+function makeVisible(cssName){
+  cssName.classList.remove("invisible");
+  cssName.classList.add("visible");
+}
 
 function resetInvisible(){
   const ks3 = document.querySelectorAll(".ks3");
@@ -27,14 +31,22 @@ export function optionBtn(callback, className){
   filterBtn(updatedCourse => {
     className = updatedCourse.id;
     resetInvisible();
-    const optionBtn = document.querySelectorAll(`.${className}`)
+    const optionBtn = document.querySelectorAll(`.${className}`);
+    const subject = document.querySelectorAll('.subject');
+    const science = subject.querySelector("#ks3-science")
     if (!optionBtn) {resetInvisible(); return;}
     const defaultActiveBtn = document.querySelector(".resource__subjects__filter--default");
     if (!defaultActiveBtn.classList.contains("resource__subjects__filter--active")){
       const activeBtn = document.querySelector(".resource__subjects__filter--active");
       activeBtn.classList.remove("resource__subjects__filter--active");
       defaultActiveBtn.classList.add("resource__subjects__filter--active");
-    
+    }
+    if (defaultActiveBtn.classList.contains("resource__subjects__filter--active")){
+      if (className === "ks3"){
+        makeVisible(science);
+        makeInvisible(defaultActiveBtn);
+      }
+      subject.forEach(btn => makeVisible(btn));
     }
     optionBtn.forEach(btn => {
       btn.classList.remove("invisible");

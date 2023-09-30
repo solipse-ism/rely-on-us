@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/solipse-ism/rely-on-us#readme",
   "devDependencies": {
-    "esbuild": "0.19.3"
+    "esbuild": "0.19.3",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0"
   }
 }
