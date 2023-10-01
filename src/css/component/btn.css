@@ -1,0 +1,10 @@
+.btn{
+  display: inline-flex;
+  background: transparent;
+  cursor: pointer;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+}
+.btn-option{
+  background-color: aliceblue;
+}

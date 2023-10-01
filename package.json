@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "esbuild /src/js/**/*.js --bundle --minify --watch --outdir=/dist",
-    "build": "node esbuild.config.mjs"
+    "build": "node esbuild.config.mjs",
+    "start:css": "postcss src/css/**/*.css --dir src/postcss -w",
+    "build:css": "postcss src/css/**/*.css --dir src/postcss",
+    "start:gulp": "gulp watchCSS",
+    "build:gulp": "gulp bundleCSS"
   },
   "repository": {
     "type": "git",
@@ -13,14 +17,17 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/solipse-ism/rely-on-us/issues"
   },
   "homepage": "https://github.com/solipse-ism/rely-on-us#readme",
   "devDependencies": {
+    "cssnano": "^6.0.1",
     "esbuild": "0.19.3",
-    "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-postcss": "^9.0.1",
+    "postcss-preset-env": "^9.1.4"
   }
 }
