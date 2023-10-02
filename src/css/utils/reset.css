@@ -10,12 +10,14 @@
 }
 body {
   font-family: var(--ff-base);
-  font-size: var(--fs-small);
   color: hsla(var(--clr-text), 1);
   line-height: 1.5;
   background: hsla(var(--clr-background), 1);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeSpeed;
+}
+html{
+  font-size: 16px;
 }
 a{
   text-decoration: none;
@@ -51,4 +53,7 @@ p, h1, h2, h3, h4, h5, h6 {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.hero{
+  z-index: -1;
 }

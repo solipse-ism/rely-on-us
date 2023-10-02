@@ -1,34 +1,81 @@
-.home::before{
-  content: "";
+.intro__hero{
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  z-index: -1;
-  max-height: 48.5rem;
-  min-height: 48.5rem;
-  background: radial-gradient(75.54% 98.47% at 78.06% -7.35%, rgba(255, 146, 36, 0.26) 0%, rgba(255, 133, 20, 0.00) 100%), radial-gradient(143.65% 131.98% at 26.08% -25.71%, rgba(76, 116, 255, 0.40) 0%, rgba(38, 92, 253, 0.00) 70.02%), #212531;
+  left:0;
+
+  height: 100vh;
+  background-image: radial-gradient(66.9% 66.9% at 87.6% 3.8%, rgba(242, 141, 191, 0.26) 0%, rgba(242, 141, 191, 0.00) 100%), radial-gradient(77.32% 73.32% at 7.01% 18.43%, rgba(76, 116, 255, 0.40) 0%, rgba(38, 92, 253, 0.00) 100%);
 }
-.home h1{
-  background: radial-gradient(50% 253.02% at 50% 124.57%, rgba(85, 121, 246, 0.40) 0%, rgba(237, 166, 94, 0.11) 100%), #FFF;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
+.intro{
+  position: relative;
+  margin-top: 28vh;
 }
-.home__slogan{
-  font-size: 1.5rem;
-  color: hsl(var(--clr-text));
-  font-weight: 400;
+.intro::before{
+  content:"A";
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  font-size: 24.23775rem;
+  font-weight: 900;
+  line-height: 1rem;
+  letter-spacing: -0.24238rem;
+  mix-blend-mode: overlay;
 }
-.home__description{
-  background: radial-gradient(684.29% 375.14% at 26.37% -115.28%, #688AFA 0%, #DEBFEB 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.intro::after{
+  content:"*";
+  position: absolute;
+  top: -45px;
+  right: -5%;
+  font-size: 24.23775rem;
+  font-weight: 900;
+  line-height: 1rem;
+  mix-blend-mode: overlay;
+  letter-spacing: -0.24238rem;
+}
+.intro__bg-element::before{
+  content:"A";
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  font-size: 24.23775rem;
+  font-weight: 900;
+  line-height: 1rem;
+  letter-spacing: -0.24238rem;
+  mix-blend-mode: overlay;
+}
+.intro__bg-element::after{
+  content:"*";
+  position: absolute;
+  top: -45px;
+  right: -5%;
+  font-size: 24.23775rem;
+  font-weight: 900;
+  line-height: 1rem;
+  mix-blend-mode: overlay;
+  letter-spacing: -0.24238rem;
+}
+.intro__h1-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+}
+.intro__h1{
+  font-size: 3.75rem;
+  max-width: 80%;
+  text-transform: uppercase;
+  letter-spacing: -0.0375rem;
+}
+.intro__p{
+  max-width: 60%;
   font-size: 1rem;
-  width: clamp(40ch, 60ch, 60ch);
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 2.25;
+  letter-spacing: 0.035rem;
 }
-.home__description span{
-  font-weight: 700;
+.intro__cta-wrapper{
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 5rem;
 }

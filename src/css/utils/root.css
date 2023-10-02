@@ -1,6 +1,8 @@
-/* * {
-  outline: 2px solid red;
+/* 
+.container--small {
+  outline: 1px solid white;
 } */
+
 :root{
   /* Color */
   --clr-text: 0, 0%, 100%;

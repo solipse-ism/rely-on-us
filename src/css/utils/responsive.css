@@ -1,0 +1,10 @@
+.container {
+  width: 97%;
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+}
+.container--small {
+  width: 75%;
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+}

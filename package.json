@@ -6,10 +6,8 @@
   "scripts": {
     "start": "esbuild /src/js/**/*.js --bundle --minify --watch --outdir=/dist",
     "build": "node esbuild.config.mjs",
-    "start:css": "postcss src/css/**/*.css --dir src/postcss -w",
-    "build:css": "postcss src/css/**/*.css --dir src/postcss",
-    "start:gulp": "gulp watchCSS",
-    "build:gulp": "gulp bundleCSS"
+    "start:css": "gulp watchCSS",
+    "build:css": "gulp bundleCSS"
   },
   "repository": {
     "type": "git",
