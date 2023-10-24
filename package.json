@@ -8,10 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run builds",
+    "deploy": "gh-pages -d builds",
+    "builds": "react-scripts build && cp build/index.html build/404.html"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0"

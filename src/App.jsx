@@ -8,7 +8,7 @@ import './assets/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router basename={"/"}>
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
