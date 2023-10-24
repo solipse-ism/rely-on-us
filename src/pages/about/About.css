@@ -1,0 +1,35 @@
+.about-title{
+  text-align: center;
+  font-size: 10rem;
+  margin-top: 5rem;
+  margin-inline: auto;
+}
+.about{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.about-choice-container{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  bottom: 5rem;
+}
+.about-choice, .about-choice--active{
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.about-choice--active{
+  font-weight: 700;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  background: hsla(255, 0%, 100%, 0.1);
+  transition: background 300ms ease;
+}
+.desc-choice{
+  width: 60%;
+}

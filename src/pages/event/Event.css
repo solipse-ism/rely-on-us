@@ -1,0 +1,10 @@
+.insp-slogan{
+  margin-inline: auto;
+  text-align: center;
+}
+.insp-breadcrumb{
+  margin-top: 3rem;
+  display: flex;
+  margin-inline: auto;
+  gap: 1rem;
+}

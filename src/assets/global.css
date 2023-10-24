@@ -1,0 +1,51 @@
+.section-margin{
+  margin-block-start: 4rem;
+}
+.section-padding{
+  padding-inline: 10rem;
+}
+@media screen and (max-width: 1050px) {
+  .section-padding{
+    padding-inline: 6rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section-padding{
+    padding-inline: 3rem;
+  }
+}
+#root {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: hsl(var(--clr-background));
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: hsl(var(--clr-background));
+    background-color: #ffffff;
+  }
+}
+h1{
+  font-size: 3.75rem;
+}
+a{
+  text-decoration: none;
+  color: hsl(var(--clr-text));
+}
+body{
+  position: relative;
+
+}
+
+.scale-up-center{-webkit-animation:scale-up-center .1s cubic-bezier(.55,.055,.675,.19) both;animation:scale-up-center .1s cubic-bezier(.55,.055,.675,.19) both}
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+.slide-top{-webkit-animation:slide-top 1s cubic-bezier(.68,-.55,.265,1.55) reverse;animation:slide-top 1s cubic-bezier(.68,-.55,.265,1.55) reverse}
+@-webkit-keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}@keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}
+.slide-rotate-hor-top{-webkit-animation:slide-rotate-hor-top .7s cubic-bezier(.55,.085,.68,.53) reverse forwards;animation:slide-rotate-hor-top .7s cubic-bezier(.55,.085,.68,.53) reverse forwards}
+@-webkit-keyframes slide-rotate-hor-top{0%{-webkit-transform:translateY(0) rotateX(0deg);transform:translateY(0) rotateX(0deg)}100%{-webkit-transform:translateY(-150px) rotateX(-90deg);transform:translateY(-150px) rotateX(-90deg)}}@keyframes slide-rotate-hor-top{0%{-webkit-transform:translateY(0) rotateX(0deg);transform:translateY(0) rotateX(0deg)}100%{-webkit-transform:translateY(-150px) rotateX(-90deg);transform:translateY(-150px) rotateX(-90deg)}}
+
+.dim {
+  opacity: .3;
+}
