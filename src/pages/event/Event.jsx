@@ -1,5 +1,6 @@
 import React from 'react'
 import './Event.css'
+import { robotic } from '/src/assets/import'
 import { Rule } from '/src/components'
 
 function Event() {
@@ -23,12 +24,28 @@ function Event() {
 function Inspiring() {
   return(
     <>
-      <div className="insp-hero"></div>
-      <h1>Inspiring Session Ft.</h1>
-      <h2 className='session-leader'>Tori</h2>
-      <p className="insp-subject" data-subject="Econnomic">ECONOMICS:</p>
-      <h3 className="insp-topic">Is taxation ethical, or is it comparable to the state cutting off your limbs?</h3>
-      <img src="" alt="Session Leader Photo" />
+      <div className="insp-hero-container">
+      </div>
+      <section className="insp-intro section-padding">
+        <div className="insp-intro-left">
+          <h1 className="insp-intro__h1">Inspiring Session Ft.</h1>
+          <h2 className="session-leader">Tori</h2>
+          <p className="insp-subject" data-subject="Econnomic">ECONOMICS:</p>
+          <h3 className="insp-topic">Is taxation ethical, or is it comparable to the state cutting off your limbs?</h3>
+        </div>
+        <div className="insp-intro-middle">
+          <div className="insp-session-leader__img">
+            <img src="" alt="Session Leader Photo" />
+          </div>
+        </div>
+        <div className="insp-intro-right">
+          <div className="insp-count-container">
+            <p className="insp-main-count">01</p>
+            <p className="insp-count">02</p>
+            <p className="insp-count">03</p>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

@@ -4,7 +4,8 @@ import './Curricular.css'
 function Curricular() {
   return (
     <>
-      <h1>Curricular</h1>
+      <h1>Super/Extra-Curricular</h1>
+      <p>IN DEVELOPMENT</p>
     </>
   )
 }

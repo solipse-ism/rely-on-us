@@ -1,0 +1,1 @@
+export { default as robotic } from './image/robotic-room.jpg'
