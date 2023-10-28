@@ -13,10 +13,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Routes>
     <Route path="/" element={<Home />}></Route>
     <Route path="/community" element={<Community />}></Route>
-    <Route path="/event">
-      <Route index element={<Event />}></Route>
-      <Route path="inspiring-session" element={<Inspiring />}></Route>
-    </Route>
+    <Route path="/event" element={<Event />}></Route>
+    <Route path="/inspiring-session" element={<Inspiring />}></Route>
     <Route path="/dashboard" element={<Dashboard />}></Route>
     <Route path="*" element={<Error404 />}></Route>
   </Routes>
