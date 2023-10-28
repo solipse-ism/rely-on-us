@@ -2,7 +2,7 @@ import React from 'react'
 import './inspiring.css'
 import { Rule } from '/src/components'
 
-export default function Inspiring() {
+function Inspiring() {
   return (
     <>
       <div className="insp-hero-container">
@@ -62,3 +62,5 @@ function PrevSession() {
     </>
   )
 }
+
+export default Inspiring
