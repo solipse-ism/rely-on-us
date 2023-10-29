@@ -16,6 +16,10 @@
   padding: 0.5rem 1.5rem;
   background: hsl(var(--clr-primary-400));
 }
+.btn--primary-100{
+  padding: 0.5rem 1.5rem;
+  background: #3F4A71;
+}
 .btn--accent{
   padding: 0.5rem 1.5rem;
   background: #E85EC0;

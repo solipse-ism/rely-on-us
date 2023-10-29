@@ -84,7 +84,6 @@
   inset:0;
   mix-blend-mode: overlay;
 }
-
 .home-community{
   display: flex;
   flex-direction: column;

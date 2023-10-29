@@ -1,0 +1,14 @@
+.dashboard-nav{
+  position: absolute;
+  inset-block: 0;
+  left:0;
+  min-width: 17rem;
+  max-width: 5vw;
+  border-right: 1px solid #3a4056;
+  background: #1D202B;
+  padding: .81rem;
+}
+.dashboard-wrapper{
+  margin-left: 18rem;
+  
+}

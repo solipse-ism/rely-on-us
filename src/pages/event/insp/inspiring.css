@@ -1,0 +1,218 @@
+.insp-hero-container{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height:100vh;
+  opacity: 0.12;
+  background: linear-gradient(180deg, #758AD1 0%, rgba(217, 217, 217, 0.00) 100%);
+  /* background-image: url('/src/assets/image/robotic-room.jpg');
+  background-position: center;
+  background-size: cover; */
+}
+.insp-hero{
+  width: 100%;
+}
+.insp-intro {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  display:flex;
+  gap:2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.insp-intro__h1{
+  font-size: 3rem;
+  line-height: 1.1; 
+  letter-spacing: 0.15rem;
+  mix-blend-mode: overlay;
+}
+.session-leader{
+  font-size: 7rem;
+  line-height: 1.1;
+  margin-top:.5rem;
+  color: #FCCE76;
+  letter-spacing: -0.07rem;
+}
+.insp-subject{
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.375rem; /* 158.333% */
+  letter-spacing: 0.03rem;
+}
+.insp-topic{
+font-size: 2rem;
+font-weight: 700;
+line-height: 1.2;
+margin-top: 4rem;
+letter-spacing: 0.04rem;
+}
+
+.insp-session-leader__img{
+  width: 256px;
+  aspect-ratio: 1 / 1; /* 1:1 aspect ratio */
+  border-radius: 50%; /* Make it circular */
+  background: white;
+}
+.insp-intro-right{
+  text-align: right;
+  width: 300px;
+  position: relative;
+}
+
+.insp-count-container{
+  display: flex;
+  position: absolute;
+  right: -4rem;
+  top: -5rem;
+  flex-direction: column;
+  gap: .5rem;
+}
+.insp-main-count{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.06rem;
+  position:relative;
+}
+.insp-main-count::after{
+  content: url('/src/assets/image/line-count-insp.svg');
+  position: absolute;
+  right: -90px;
+  bottom: .5rem;
+}
+.insp-count{
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 1.3; /* 133.333% */
+letter-spacing: 0.03rem;
+}
+.insp-logistic{
+  margin-top: 3rem;
+  text-align: right;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: 0.075rem;
+}
+.insp-breadcrumb{
+  margin-top: 3rem;
+  display: flex;
+  margin-inline: auto;
+  gap: 1rem;
+}
+.insp{
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap:4rem;
+  border-radius: 1.5rem;
+}
+.insp-background{
+  height:100%;
+  object-fit: cover;
+}
+.session-right{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-right: 4rem;
+  position: relative;
+  padding: 4rem 10rem;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.0175rem;
+}
+.session-right::before{
+  content:"";
+  inset: 0;
+  position: absolute;
+  border-radius: 2rem;
+  background: rgba(217, 217, 217, .25);
+  mix-blend-mode: overlay;
+  z-index: -1;
+}
+.session__h1{
+  background: linear-gradient(90deg, #FCD771 4.53%, #FD3ABB 92.42%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;font-family: Inter;
+  font-size: 4rem;
+  line-height: 1.3;
+  letter-spacing: -0.04rem;
+}
+.session__ul > *{
+  list-style: circle;
+}
+.insp-benefit{
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+.insp-benefit__h1{
+  background: linear-gradient(90deg, #20D9A1 10.47%, #0393FC 84.4%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.insp-benefit__ul{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.insp-benefit__card{
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 0.3125rem 1.4375rem;
+  
+  font-size: 1.25rem;
+  line-height: 2.4;
+  letter-spacing: 0.04375rem;
+}
+.diploma{
+  border-radius: 0.5rem;
+  background: rgba(16, 153, 96, 0.5);
+  padding: 0.3125rem 1.4375rem;
+  
+  font-size: 1.25rem;
+  line-height: 2.4;
+  letter-spacing: 0.04375rem;
+}
+.insp-previous{
+  margin-top: 3rem;
+  margin-bottom: 20rem;
+}
+.insp-previous__h1{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.04rem;
+}
+.insp-previous__ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top:1.5rem;
+}
+.insp-previous__li{
+  position: relative;
+  padding: 2rem 6rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: -0.0175rem;
+}
+.insp-previous__li::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: overlay;
+  border-radius: 1.5rem;
+  background: rgba(217, 217, 217, 0.25);
+}
